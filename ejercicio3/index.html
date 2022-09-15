@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let calcu=prompt("Que operacion deseas realizar: 1-Suma  2 -resta  3-Multiplicar  4-Dividir");
+        let num=parseInt(calcu);
+          switch (num) {
+            case 1:
+                let n1= prompt("Escriba el primer valor");
+                let n2= prompt("Escriba el segundo valor");
+                let x =parseInt(n1);
+                let y = parseInt(n2);
+                let respuesta=x+y;
+                let respar=document.createElement('h1');
+                document.body.append(respar);
+                respar.innerHTML=respuesta;
+                break;
+                case 2:
+                let n3= prompt("Escriba el primer valor");
+                let n4= prompt("Escriba el segundo valor");
+                let x1 =parseInt(n3);
+                let y1 = parseInt(n4);
+                let respuestaResta=x1-y1;
+                let resta=document.createElement('h1');
+                document.body.append(resta);
+                resta.innerHTML=respuestaResta;
+                break;
+                case 3:
+                let n5= prompt("Escriba el primer valor");
+                let n6= prompt("Escriba el segundo valor");
+                let x2 =parseInt(n5);
+                let y2 = parseInt(n6);
+                let multiplicar=x2*y2;
+                let multi=document.createElement('h1');
+                document.body.append(multi);
+                multi.innerHTML=multiplicar;
+                break;
+                case 4:
+                    let veri=true;
+                
+                while(veri){
+                    var n7= prompt("Escriba el primer valor diferente de 0");
+                    if(n7!=0){                    
+                    veri=false;
+                }}
+                while(veri===false){
+                    var n8= prompt("Escriba el segundo valor diferente de 0");
+                    if(n8!=0){                    
+                    veri=true;
+                }}
+               
+                
+                let x3 =parseFloat(n7);
+                let y3 = parseFloat(n8);
+                let dividir=x3/y3;
+                let divi=document.createElement('h1');
+                document.body.append(divi);
+                divi.innerHTML=dividir;
+                break;
+
+                default : let defaulR=document.createElement('h1');
+                document.body.append(defaulR);
+                defaulR.innerHTML="Operacion Incorrecta";
+                break;
+                
+          }
+    </script>
+</body>
+</html>

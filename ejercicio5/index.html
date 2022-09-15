@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+   function verificarPalindromo()
+{
+	var frase=prompt("Escribe una palabra para saber si es o no palindroma")
+    var x =frase.toLowerCase();
+ 
+	
+	
+ 
+	for (var i=0;i<x.length;i++){
+		if(x[i]!=x[x.length-i-1]){
+			return false;
+		}
+	}
+	return true;
+}
+ 
+if(verificarPalindromo())
+{
+	alert("Esto es palíndromo");
+}else{
+	alert("Esto no es palíndromo")
+}
+
+    
+    </script>
+  </body>
+</html>

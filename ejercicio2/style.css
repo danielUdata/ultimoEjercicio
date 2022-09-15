@@ -1,0 +1,9 @@
+.respuestas{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+h2{
+    color:blue;
+}

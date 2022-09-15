@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let veri = true;
+
+      while (veri) {
+        var n = prompt("Escriba el primer valor mayor a diez");
+        if (n > 10) {
+          veri = false;
+        }
+      }
+      while (veri === false) {
+        var n2 = prompt("Escriba el segundo valor mayor a diez");
+        if (n2 > 10) {
+          veri = true;
+        }
+      }
+
+      if (n < n2) {
+        for (var i = n; i <= n2; i++) {
+          if (i % 2 == 0) {
+            let defaulR = document.createElement("h1");
+            document.body.append(defaulR);
+            defaulR.innerHTML = i;
+          }
+        }
+      }else{
+        for (var i = n2; i <= n; i++) {
+          if (i % 2 == 0) {
+            let defaulR = document.createElement("h1");
+            document.body.append(defaulR);
+            defaulR.innerHTML = i;
+          }
+        }
+
+
+      }
+    </script>
+  </body>
+</html>
